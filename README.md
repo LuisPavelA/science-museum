@@ -5,3 +5,6 @@
 
 # What is this?
 ### These are some pictures I took while on a trip to the London Science Museum
+
+# How was this made?
+### This project was made using [image-server](https://github.com/LuisPavelA/image-server)
