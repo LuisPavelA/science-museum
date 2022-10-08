@@ -170,7 +170,7 @@
     <div id="main">
       
       <% names.map((result, index) =>{ %>
-          <img loading="lazy" src="<%- website %>icons/<%- result %>" onclick="showPreviewDiv(this.id)" id="preview_<%- result %>">
+          <img loading="lazy" src="/icons/<%- result %>" onclick="showPreviewDiv(this.id)" id="preview_<%- result %>">
       <% }) %>
     </div>
 
@@ -203,11 +203,11 @@
         showPreviewDiv = function(id) {
           let file = id.replace("preview_", "")
 
-          preview_image.src = `<%- website %>${file}`
+          preview_image.src = `/${file}`
           
           preview_div.style.display = "initial"
 
-          fullscreen_view.setAttribute("href", `<%- website %>${file}`)
+          fullscreen_view.setAttribute("href", `/${file}`)
         }
       </script>
   </body>
